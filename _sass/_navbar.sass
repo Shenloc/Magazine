@@ -1,0 +1,48 @@
+nav
+  background-color: #fff
+  height: 60px
+  display: flex
+  justify-content: space-between
+
+  .active
+    color: $blue-accent
+  .active-menu
+    color: #fff
+    background-color: $blue-accent
+
+  a
+    background-color: #fff
+    padding: 20px
+    color: $black
+    display: block
+    &:hover
+      background-color: $blue-accent
+      color: #fff
+
+  .navigation
+    display: flex
+    #menu-button
+      &:hover
+        background-color: $blue-accent
+      .fa
+        display: inline-block
+        padding-left: 0
+        height: 20px
+        font-size: 20px
+        &:hover
+          color: #fff
+    .desktop-nav
+      display: flex
+      @media(max-width: 940px)
+        display: none
+
+  .nav-actions
+    display: flex
+    a
+      color: $gray
+      &:hover
+        color: #fff
+    .social
+      display: flex
+      border-left: 1px solid $gray
+      border-right: 1px solid $gray

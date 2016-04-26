@@ -1,0 +1,214 @@
+.toggle-menu
+  display: none
+
+#nav-dropdown
+  margin-top: 14px
+  display: flex
+  @media(max-width: 800px)
+    flex-direction: column
+  .fa
+    font-size: 22px
+    color: $gray
+    margin-right: 20px
+
+  .menu
+    display: flex
+    width: 50%
+    margin-right: 14px
+    @media(max-width: 800px)
+      width: 100%
+    .dropdown-nav
+      width: 50%
+      .nav-section
+        a
+          display: block
+          background-color: #fff
+          padding: 26px
+          border-bottom: 1px solid $gray
+          &:hover
+            background-color: $blue-accent
+            color: #fff !important
+            border-bottom: 1px solid $blue-accent
+        .active
+          @extend a:hover
+      .contact-section
+        padding: 30.3px
+        box-sizing: border-box
+        background-color: $gray
+        .contact-element
+          display: flex
+          margin-bottom: 22px
+          &:last-of-type
+            margin-bottom: 0
+          .fa
+            color: #fff
+            font-size: 22px
+            margin-right: 20px
+            width: 25px
+          .contact-info
+            p
+              color: #fff
+              margin: 0
+
+    .nav-content
+      width: 50%
+      .content-section
+        background-color: #152840
+        position: relative
+        &:hover
+          background-color: #263a54
+        .last
+          border: none
+        .content-element
+          padding: 39.2px 14px
+          border-bottom: 1px solid #4b6580
+          .section-title
+            color: $blue-accent
+            margin-bottom: 7.2px
+          .fa
+            position: absolute
+            top: 45px
+            right: -10px
+            font-size: 15px
+            color: $blue-accent
+          a
+            display: block
+            line-height: 1.6
+            &:hover
+              color: #59AAFF
+
+  .social-network
+    display: flex
+    flex-direction: column
+    width: 50%
+    @media(max-width: 800px)
+      width: 100% !important
+      margin-top: 14px
+    .social-upper-part
+      display: flex
+      @media(max-width: 550px)
+        flex-direction: column
+      .social-list
+        width: 50%
+        margin-right: 14px
+        @media(max-width: 550px)
+          width: 100%
+        a
+          display: block
+          background-color: #fff
+          padding: 14px
+          svg
+            color: #fff
+            width: 15px
+            height: 15px
+            border-radius: 50%
+            padding: 10px
+            margin-right: 20px
+            background-color: $gray
+            transform: translateY(38%)
+        .fb
+          &:hover
+            color: #4d6baa
+        .tw
+          &:hover
+            color: #4fc6f8
+        .go
+          &:hover
+            color: #db4437
+        .rs
+          &:hover
+            color: #fb7629
+        .pi
+          padding-bottom: 30px
+          &:hover
+            color: #c72527
+
+      .social-widget
+        width: 50%
+        @media(max-width: 550px)
+          width: 100%
+        .widget
+          padding: 24.3px 14px
+          margin-bottom: 14px
+          &:last-of-type
+            margin-bottom: 0
+          svg
+            display: block
+            transform: scale(3)
+            padding: 17px 23px
+            margin-bottom: 39px
+          .follow
+            display: inline-block
+            p
+              margin: 0 !important
+            .fa
+              color: #fff
+              transform: translate(10%, 15%) rotate(45deg)
+          p
+            display: inline
+            color: #fff
+            width: 40px
+        .facebook
+          background-color: #4d6baa
+          @media(max-width: 550px)
+            margin-top: 14px
+        .twitter
+          background-color: #4fc6f8
+
+    .sign-in
+      background-color: #fff
+      text-align: center
+      padding: 25px
+      margin-top: 14px
+      a
+        margin-right: 25px
+        &:last-of-type
+          margin-right: 0
+      svg
+        padding: 10px
+        color: #fff
+        border-radius: 50%
+        margin-right: 25px
+        width: 20px
+        height: 20px
+        &:last-of-type
+          margin-right: 0
+      .fb
+        background-color: #4d6baa
+      .tw
+        background-color: #4fc6f8
+      .go
+        background-color: #db4437
+      .li
+        background-color: #238cc8
+
+    .newsletter
+      @extend .sign-in
+      .input
+        width: 100%
+        input
+          padding: 10px
+          width: 70%
+          outline-color: $blue-accent
+          @media(max-width: 1221px)
+            width: 40%
+          @media(max-width: 305px)
+            width: 70%
+        button
+          background-color: $red-accent
+          color: #fff
+          border: 1px solid $red-accent
+          border-radius: 5px
+          margin-left: 10px
+          padding: 10px 20px
+          transition: .5s ease
+          cursor: pointer
+          &:hover
+            background-color: transparent
+            color: $red-accent
+          @media(max-width: 320px)
+            border-radius: 0
+            margin-top: 14px
+          @media(max-width: 305px)
+            width: 80%
+            margin-left: 0
