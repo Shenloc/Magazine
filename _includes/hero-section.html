@@ -1,6 +1,56 @@
 <section id="hero-section">
-  <h1>Featured Story</h1>
-  <p>Now that the holiday gift-giving time is over, we're
-  sure many of our readers unwrapped some new consoles.
-  Despite its long life on the market...</p>
+  <div id="myCarousel" class="carousel slide">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for Slides -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <!-- Set the first background image using inline CSS below. -->
+            <div class="fill" style="background-image:url('img/hero-coffee-notes.jpg');"></div>
+            <div class="carousel-caption">
+                <h1>Featured Story</h1>
+                <p>Now that the holiday gift-giving time is over, we're
+                sure many of our readers unwrapped some new consoles.
+                Despite its long life on the market...</p>
+                <a href="#">VIEW MORE</a>
+            </div>
+        </div>
+        <div class="item">
+            <!-- Set the second background image using inline CSS below. -->
+            <div class="fill" style="background-image:url('img/hero-hand-laptop.jpg');"></div>
+            <div class="carousel-caption">
+                <h1>Featured Story</h1>
+                <p>Now that the holiday gift-giving time is over, we're
+                sure many of our readers unwrapped some new consoles.
+                Despite its long life on the market...</p>
+                <a href="#">VIEW MORE</a>
+            </div>
+        </div>
+        <div class="item">
+            <!-- Set the third background image using inline CSS below. -->
+            <div class="fill" style="background-image:url('img/hero-laptop.jpg');"></div>
+            <div class="carousel-caption">
+                <h1>Featured Story</h1>
+                <p>Now that the holiday gift-giving time is over, we're
+                sure many of our readers unwrapped some new consoles.
+                Despite its long life on the market...</p>
+                <a href="#">VIEW MORE</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="icon-prev"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="icon-next"></span>
+    </a>
+
+  </div>
 </section>

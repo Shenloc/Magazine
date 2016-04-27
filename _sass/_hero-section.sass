@@ -1,3 +1,87 @@
 #hero-section
-  height: 1000px
-  background-color: $blue-accent
+  margin-top: 14px
+
+  .carousel,
+  .item,
+  .active
+    height: 75vh
+
+  .carousel-indicators
+    .active
+      height: 12px
+
+  .carousel-inner
+    height: 100%
+
+    .carousel-caption
+      top: 50px
+      left: 60px
+      width: 40%
+      text-align: left
+      @media(max-width: 767px)
+        top: -20px
+      @media(max-width: 550px)
+        width: 70%
+      @media(max-width: 330px)
+        width: 80%
+        left: 30px
+      p
+        margin: 15px 0 60px
+        font-weight: 100
+      a
+        padding: 20px 40px
+        border: 1px solid #fff
+        color: #fff
+        transition: .5s ease
+        &:hover
+          background: #fff
+          color: $black
+          text-shadow: none
+
+  .carousel-control
+    background-color: #fff
+    opacity: 1
+    height: 60px
+    width: 3%
+    top: 50%
+    transform: translateY(-50%)
+    @media(max-width: 450px)
+      width: 12px
+
+    span
+      color: #333
+      text-shadow: none
+
+  .left
+    background-image: none
+    border-top-right-radius: 5px
+    border-bottom-right-radius: 5px
+    span
+      transform: translate(-25%, -25%)
+      @media(max-width: 767px)
+        transform: translate(-5%, -10%)
+
+  .right
+    background-image: none
+    border-top-left-radius: 5px
+    border-bottom-left-radius: 5px
+    span
+      transform: translate(25%, -25%)
+      @media(max-width: 767px)
+        transform: translate(5%, -10%)
+
+
+  /* Background images are set within the HTML using inline CSS, not here */
+
+  .fill
+    width: 100%
+    height: 100%
+    background-position: center
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    -o-background-size: cover
+    background-size: cover
+    -webkit-filter: brightness(0.6)
+    -moz-filter: brightness(0.6)
+    -o-filter: brightness(0.6)
+    filter: brightness(0.6)
