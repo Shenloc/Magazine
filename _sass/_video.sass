@@ -1,0 +1,66 @@
+#video
+  display: flex
+  margin-top: 14px
+  @media(max-width: 700px)
+    flex-direction: column
+  .video-blurb
+    width: 50%
+    background-color: #fff
+    padding: 60px 50px
+    position: relative
+    @media(max-width: 700px)
+      width: 100%
+    .fa
+      color: #fff
+      background-color: $red-accent
+      padding: 10px
+      position: absolute
+      left: 0%
+    h2
+      margin-top: 0px
+    p
+      &:first-of-type
+        color: #a3abaf
+    a
+      &:hover
+        text-decoration: underline !important
+    .link
+      color: $red-accent
+
+  #video-player
+    position: relative
+    background:
+      image: url('../img/city-cab.jpg')
+      size: cover
+    width: 100%
+    height: auto
+    @media(max-width: 700px)
+      height: 300px
+    .fa-play-circle
+      position: absolute
+      top: 50%
+      left: 50%
+      color: rgba(21, 40, 64, 0.84)
+      display: block
+      font-size: 70px
+      transform: translateY(-25%)
+
+    .video-icons
+      text-align: center
+      padding: 30px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      position: absolute
+      top: 0
+      bottom: 0
+      background-color: rgba(21, 40, 64, 0.64)
+      a
+        color: #fff
+        display: block
+        &:hover
+          color: $red-accent
+        .fa
+          color: #fff
+          display: block
+          font-size: 40px
