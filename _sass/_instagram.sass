@@ -1,0 +1,74 @@
+#instagram
+  display: flex
+  max-height: 290px
+  margin-top: 14px
+  @media(max-width: 720px)
+    flex-direction: column
+    max-height: none
+
+  .insta-social
+    background-color: pink
+    padding: 80px 100px
+    background:
+      image: url('../img/camera-blur.jpg')
+      size: inherit
+      repeat: no-repeat
+    display: flex
+    justify-content: space-between
+    width: 41.3%
+    margin-right: 14px
+    @media(max-width: 720px)
+      width: 100%
+      margin-right: 0
+
+    .share, .like
+      display: inline-block
+      color: #fff
+      text-align: center
+      margin-top: 40px
+      @media(max-width: 720px)
+        margin-top: 0
+      a, .fa
+        display: block
+        color: #fff
+      .fa
+        font-size: 30px
+        
+    .share
+      @media(max-width: 1200px)
+        margin-right: 10px
+
+  .insta
+    display: flex
+    @media(max-width: 450px)
+      flex-direction: column
+    .insta-blurb
+      background-color: #fff
+      padding: 60px 50px
+      position: relative
+      width: 50%
+      @media(max-width: 700px)
+        width: 100%
+      .fa
+        color: #fff
+        background-color: #4fc6f8
+        padding: 10px
+        position: absolute
+        left: 0%
+      h2
+        margin-top: 0px
+      p
+        &:first-of-type
+          color: #a3abaf
+      a
+        &:hover
+          text-decoration: underline !important
+      .link
+        color: $red-accent
+
+    img
+      display: inline-block
+      width: 50%
+      height: auto
+      @media(max-width: 450px)
+        width: 100%
