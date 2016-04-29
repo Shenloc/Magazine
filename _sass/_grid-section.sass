@@ -1,0 +1,41 @@
+#grid-section
+  display: flex
+  margin-top: 14px
+
+  #main-grid-sections
+
+    #calendar
+      display: flex
+      max-height: 300px
+      .view-more
+        display: block
+        background-color: $red-accent
+        color: #fff
+        font-size: 36px
+        max-width: 300px
+        padding: 50px 60px
+        border: 1px solid $red-accent
+        margin-left: 14px
+        &:hover
+          background-color: #fff
+          color: $red-accent
+          text-decoration: underline !important
+
+    #quote
+      background-color: #fff
+      margin-top: 14px
+      padding: 60px 80px
+      position: relative
+      @media(max-width: 720px)
+        width: 100%
+      .fa
+        color: #fff
+        background-color: #4bc7c7
+        padding: 10px
+        position: absolute
+        left: 0%
+      p
+        font:
+          style: italic
+          size: 35px
+          weight: 100
