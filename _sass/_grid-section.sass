@@ -1,12 +1,17 @@
 #grid-section
   display: flex
   margin-top: 14px
+  @media(max-width: 720px)
+    flex-direction: column-reverse
 
   #main-grid-sections
 
     #calendar
       display: flex
       max-height: 300px
+      @media(max-width: 720px)
+        flex-direction: column
+        max-height: none
       .view-more
         display: block
         background-color: $red-accent
@@ -16,6 +21,10 @@
         padding: 50px 60px
         border: 1px solid $red-accent
         margin-left: 14px
+        @media(max-width: 720px)
+          width: 100%
+          max-width: none
+          margin: 14px 0 0
         &:hover
           background-color: #fff
           color: $red-accent

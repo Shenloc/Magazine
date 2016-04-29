@@ -1,6 +1,9 @@
 aside
   width: 41.3%
   margin-right: 14px
+  @media(max-width: 720px)
+    margin-top: 14px
+    width: 100%
 
   #tweets
     background-color: #4ec6f8
@@ -13,6 +16,13 @@ aside
       .fa
         margin-top: -1px
         font-size: 25px
+    .tweet-body
+      @media(max-width: 720px)
+        display: flex
+        p
+          padding: 30px 20px
+          &:last-of-type
+            border-right: none
 
     a
       color: #fff
