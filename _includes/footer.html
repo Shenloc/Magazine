@@ -1,38 +1,37 @@
-<footer class="site-footer">
+<footer>
+  <nav id="footer-nav">
+    <a href="#">About</a>
+    <a class="active-tab" href="#">Team</a>
+    <a href="#">Privacy</a>
+    <a href="#">Advertise</a>
+    <a href="#">Contact</a>
+  </nav>
 
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
+  <div id="footer-body">
+    <div id="about"></div>
+    <div id="team">
+      <div class="team-unit">
+        <img src="img/uf-1.jpg">
+        <div class="team-head">
+          <h3><strong>Jane Doe</strong></h3>
+          <p>CEO / Founder</p>
+        </div>
+        <p>“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has...”</p>
+        <a href="#">@janedoe</a>
       </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
+      <div class="team-unit">
+        <img src="img/uf-2.jpg">
+        <div class="team-head">
+          <h3><strong>Joe Doe</strong></h3>
+          <p>Co-Founder</p>
+        </div>
+        <p>“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has...”</p>
+        <a href="#">@joedoe</a>
       </div>
     </div>
-
+    <div id="privacy"></div>
+    <div id="advertise"></div>
+    <div id="contact"></div>
+    </div>
   </div>
-
 </footer>
