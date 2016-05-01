@@ -1,0 +1,48 @@
+#calendar
+  background-color: $bg-content
+  min-width: 300px
+  #calendar-head
+    display: flex
+    justify-content: space-around
+    p
+      color: #fff
+      padding: 35px 0
+    a
+      padding: 35px 0
+      color: #fff
+    .prev-month
+      &::before
+        content: "\003c"
+        color: #fff
+        margin-right: 10px
+    .next-month
+      &::after
+        content: "\003e"
+        color: #fff
+        margin-left: 10px
+
+  #calendar-body
+    table
+      width: 100%
+      height: 100%
+      tr
+        border-top: 1px solid #53627b
+        height: 100%
+        td
+          text-align: center
+          color: #fff
+          height: 100%
+          padding: 5px
+          border-right: 1px solid #53627b
+          &:last-of-type
+            border-right: none
+          &:hover
+            background-color: #56ccc8
+            cursor: pointer
+
+        .week
+          background-color: #263a54
+        .weekend
+          background-color: #324864
+        .mark
+          background-color: $red-accent !important
