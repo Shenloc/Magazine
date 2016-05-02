@@ -60,7 +60,7 @@
         .last
           border: none
         .content-element
-          padding: 39.2px 14px
+          padding: 43.47px 14px
           border-bottom: 1px solid #4b6580
           .section-title
             color: $blue-accent
@@ -97,6 +97,11 @@
           display: block
           background-color: #fff
           padding: 14px
+          img
+            padding: 10px
+            background-color: $gray
+            border-radius: 50%
+            margin-right: 20px
           svg
             color: #fff
             width: 15px
@@ -132,11 +137,9 @@
           margin-bottom: 14px
           &:last-of-type
             margin-bottom: 0
-          svg
+          img
             display: block
-            transform: scale(3)
-            padding: 17px 23px
-            margin-bottom: 39px
+            margin-bottom: 45px
           .follow
             display: inline-block
             p
@@ -158,32 +161,28 @@
     .sign-in
       background-color: #fff
       text-align: center
-      padding: 25px
+      padding: 35px
       margin-top: 14px
-      a
-        margin-right: 25px
-        &:last-of-type
-          margin-right: 0
-      svg
-        padding: 10px
-        color: #fff
-        border-radius: 50%
-        margin-right: 25px
-        width: 20px
-        height: 20px
-        &:last-of-type
-          margin-right: 0
-      .fb
-        background-color: #4d6baa
-      .tw
-        background-color: #4fc6f8
-      .go
-        background-color: #db4437
-      .li
-        background-color: #238cc8
+      .icons
+        margin: 35px 0 10px
+        a
+          padding: 10px 11px
+          border-radius: 50%
+          margin: 20px 25px 0 0
+          &:last-of-type
+            margin-right: 0
+        .fb
+          background-color: #4d6baa
+        .tw
+          background-color: #4fc6f8
+        .go
+          background-color: #db4437
+        .li
+          background-color: #238cc8
 
     .newsletter
       @extend .sign-in
+      padding: 46px
       .input
         width: 100%
         input

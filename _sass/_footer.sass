@@ -94,10 +94,15 @@ footer
           width: 99.7%
           height: 140px
 
-        div
+        .send
           display: flex
           justify-content: space-between
           margin-top: 40px
+          @media(max-width: 433px)
+            flex-direction: column-reverse
+          button
+            @media(max-width: 433px)
+              margin-bottom: 40px
 
           p
             display: inline
