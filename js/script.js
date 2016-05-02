@@ -11,8 +11,8 @@ function init() {
   });
 
 
-  $(".nav-link").on("hover", function(){
-    $(this).children().css("color", "#fff");
+  $(".social-list a").on("hover", function(){
+    $(this).children().css("background-color", "red");
   });
 
 
