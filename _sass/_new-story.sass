@@ -1,4 +1,15 @@
 #new-story
+  position: relative
+  overflow: hidden
+  &::before
+    content: 'NEW'
+    color: #fff
+    background-color: $red-accent
+    padding: 40px 40px 5px
+    transform: rotate(-45deg)
+    position: absolute
+    top: -18px
+    left: -40px
   margin-top: 14px
   img
     width: 100%
