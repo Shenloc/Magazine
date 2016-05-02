@@ -4,7 +4,7 @@
   @media(max-width: 720px)
     flex-direction: column
   .video-blurb
-    max-width: 31%
+    max-width: 32%
     background-color: #fff
     padding: 60px 50px
     position: relative
@@ -29,21 +29,40 @@
 
   #video-player
     position: relative
-    background:
+    //background:
       image: url('../img/city-cab.jpg')
       size: cover
     width: 100%
     height: auto
     @media(max-width: 720px)
       height: 300px
+
+    img
+      width: 100%
+      height: 312px
+      display: block
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      z-index: 0
+
+    iframe
+      width: 100%
+      height: 306px
+
     .fa-play-circle
       position: absolute
       top: 50%
       left: 50%
+      z-index: 1
       color: rgba(21, 40, 64, 0.84)
       display: block
       font-size: 70px
       transform: translateY(-25%)
+      &:hover
+        cursor: pointer
 
     .video-icons
       text-align: center
@@ -54,11 +73,15 @@
       position: absolute
       top: 0
       bottom: 0
+      z-index: 1
       background-color: rgba(21, 40, 64, 0.64)
       a
         color: #fff
         display: block
         &:hover
+          color: $red-accent
+        &:hover .fa
+          transition: .5s ease
           color: $red-accent
         .fa
           color: #fff
