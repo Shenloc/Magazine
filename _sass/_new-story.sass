@@ -27,8 +27,14 @@
     .article-actions
       display: flex
       margin-top: 60px
+      @media(max-width: 720px)
+        justify-content: space-around
+      @media(max-width: 385px)
+        flex-direction: column
       .action
         margin-right: 5%
+        @media(max-width: 720px)
+          margin-right: 0
         a
           color: #4bc7c7
           margin-right: 10px
