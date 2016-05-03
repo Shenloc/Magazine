@@ -1,7 +1,5 @@
 window.onload = init;
 function init() {
-//  $('#menu-button').removeClass('active-menu');
-//  $('#nav-dropdown').slideToggle(1);
 
   //  NAVBAR
   $('#menu-button').click(function(){
