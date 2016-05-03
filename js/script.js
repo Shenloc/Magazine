@@ -1,12 +1,12 @@
 window.onload = init;
 function init() {
-  $('#menu-button').removeClass('active-menu');
-  $('#nav-dropdown').slideToggle(1);
+//  $('#menu-button').removeClass('active-menu');
+//  $('#nav-dropdown').slideToggle(1);
 
   //  NAVBAR
   $('#menu-button').click(function(){
     $(this).toggleClass('active-menu');
-    $('#nav-dropdown').slideToggle(300);
+    $('#nav-dropdown').slideToggle(300).css('display', 'flex');
   });
 
 
