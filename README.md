@@ -1,2 +1,2 @@
 # Magazine
-My interpretation of a Graphic Burger's website design.
+Website based on a Graphic Burger's design.
