@@ -4,7 +4,7 @@ function init() {
   //  NAVBAR
   $('#menu-button').click(function(){
     $(this).toggleClass('active-menu');
-    $('#nav-dropdown').slideToggle(300);
+    $('#nav-dropdown').slideToggle(300).css('display', 'flex');
   });
 
   //VIDEO PLAYER
