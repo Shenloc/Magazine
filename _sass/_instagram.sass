@@ -1,7 +1,7 @@
 #instagram
   display: flex
   margin-top: 14px
-  @media(max-width: 720px)
+  @media(max-width: 1080px)
     flex-direction: column
     max-height: none
 
@@ -12,24 +12,24 @@
       size: cover
       repeat: no-repeat
     display: flex
-<<<<<<< HEAD
     justify-content: space-around
-=======
-    justify-content: space-between
->>>>>>> f766b650fc292d6e48ef85d05488eac43e7b6d58
     width: 45.3%
+    max-width: 560px
     margin-right: 14px
-    @media(max-width: 720px)
+    @media(max-width: 1080px)
       width: 100%
+      max-width: none
       margin-right: 0
       margin-bottom: 14px
+      padding: 50px
+
 
     .share, .like
       display: inline-block
       color: #fff
       text-align: center
       margin-top: 65%
-      @media(max-width: 720px)
+      @media(max-width: 1080px)
         margin-top: 0
       a, .fa
         display: block
