@@ -41,7 +41,7 @@
       .contact-section
         @media(max-width: 533px)
           display: none
-        padding: 30.3px
+        padding: 34px
         box-sizing: border-box
         background-color: $gray
         .contact-element
@@ -55,7 +55,6 @@
             margin-right: 20px
             width: 25px
           .contact-info
-            overflow: auto
             p
               color: #fff
               margin: 0
@@ -71,7 +70,7 @@
         .last
           border: none
         .content-element
-          padding: 43.47px 14px
+          padding: 40px 14px
           border-bottom: 1px solid #4b6580
           @media(max-width: 533px)
             padding: 11px 14px
@@ -110,27 +109,38 @@
       .social-list
         width: 50%
         margin-right: 14px
+        padding: 10px 0
+        background-color: #fff
         @media(max-width: 550px)
           width: 100%
         a
           display: block
           background-color: #fff
-          padding: 14px
-          &:hover .facebook
+          padding: 17px
+          &:hover .fa-facebook
             transition: .5s ease
             background-color: #4d6baa
-          &:hover .twitter
+          &:hover .fa-twitter
             transition: .5s ease
             background-color: #4fc6f8
-          &:hover .google
+          &:hover .fa-google
             transition: .5s ease
             background-color: #db4437
-          &:hover .rss
+          &:hover .fa-rss
             transition: .5s ease
             background-color: #fb7629
-          &:hover .pinterest
+          &:hover .fa-pinterest
             transition: .5s ease
             background-color: #c72527
+
+          .fa
+            padding: 10px
+            background-color: $gray
+            color: #fff
+            width: 40px
+            height: 40px
+            border-radius: 50%
+
           img
             padding: 10px
             background-color: $gray
@@ -149,7 +159,6 @@
           &:hover
             color: #fb7629
         .pi
-          padding-bottom: 30px
           &:hover
             color: #c72527
 
@@ -158,20 +167,23 @@
         @media(max-width: 550px)
           width: 100%
         .widget
-          padding: 32px 14px
+          padding: 36px 14px
           margin-bottom: 14px
           &:last-of-type
             margin-bottom: 0
-          img
+          .fa-facebook, .fa-twitter
+            font-size: 50px
             display: block
-            margin-bottom: 45px
+            margin-bottom: 39px
+            color: #fff
           .follow
             display: inline-block
             p
               margin: 0 !important
-            .fa
+            .fa-plus-circle, .fa-check-circle
               color: #fff
-              transform: translate(10%, 15%) rotate(45deg)
+              vertical-align: bottom
+              margin-left: 5px
           p
             display: inline
             color: #fff
@@ -186,24 +198,29 @@
     .sign-in
       background-color: #fff
       text-align: center
-      padding: 33px
+      padding: 29px
       margin-top: 14px
       .icons
         margin: 35px 0 10px
         a
-          padding: 12px 10px
-          border-radius: 50%
           margin: 20px 25px 0 0
           &:last-of-type
             margin-right: 0
-        .fb
-          background-color: #4d6baa
-        .tw
-          background-color: #4fc6f8
-        .go
-          background-color: #db4437
-        .li
-          background-color: #238cc8
+          .fa-facebook
+            padding: 10px
+            border-radius: 50%
+            width: 42px
+            color: #fff
+            background-color: #4d6baa
+          .fa-twitter
+            @extend .fa-facebook
+            background-color: #4fc6f8
+          .fa-google
+            @extend .fa-facebook
+            background-color: #db4437
+          .fa-linkedin
+            @extend .fa-facebook
+            background-color: #238cc8
 
     .newsletter
       @extend .sign-in
